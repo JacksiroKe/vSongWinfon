@@ -1,0 +1,12 @@
+<local:SettingsViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:vSongBook" 
+    SampleProperty="Sample Text Property Value">
+    
+    <local:SettingsViewModel.Items>        
+        <local:SettingsModel SettTitle="Display Settings" SettDescri="display, font-size" /> 
+        <local:SettingsModel SettTitle="Application Mode" SettDescri="the mode of this app" /> 
+    </local:SettingsViewModel.Items>
+    
+</local:SettingsViewModel>
