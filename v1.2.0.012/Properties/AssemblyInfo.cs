@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Resources;
@@ -7,12 +7,12 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("vSongBook")]
-[assembly: AssemblyDescription("An App that turns your phone into a SongBook")]
+[assembly: AssemblyDescription("Turn Your Phone Into a SongBook")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jackson Siro")]
 [assembly: AssemblyProduct("vSongBook")]
-[assembly: AssemblyCopyright("Copyright © Jackson Siro 2016")]
-[assembly: AssemblyTrademark("JS")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -21,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8bc9849e-ead9-4b41-9dae-e7b65b40a342")]
+[assembly: Guid("4df9cf86-38f7-4f0d-9a80-a8cb64cd2c7b")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,6 +32,6 @@ using System.Resources;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.2.0.012")]
-[assembly: AssemblyFileVersion("1.2.0.012")]
+[assembly: AssemblyVersion("1.2.1.245")]
+[assembly: AssemblyFileVersion("1.2.1.245")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
