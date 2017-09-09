@@ -1,0 +1,249 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="vSongBook.CcSongBook"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696" 
+    d:DataContext="{d:DesignData SampleData/SampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" BorderBrush="DarkOrange">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+   <Grid x:Name="LayoutRoot" Background="#FFFA6800" >
+        <ProgressBar Name="pProgress" IsIndeterminate="True" Height="50" Foreground="White" />
+
+        <phone:Pivot Name="pSongBook" Title="VSONGBOOK" Foreground="White" >
+            <phone:PivotItem Header="worship" Foreground="White" >
+                <ListBox x:Name="ListBox1" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox1_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                            <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                            <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                    </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="injili" Foreground="White" >
+                <ListBox x:Name="ListBox2" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox2_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="believers" Foreground="White">
+                <ListBox x:Name="ListBox3" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox3_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="wokovu" Foreground="White" >
+                <ListBox x:Name="ListBox4" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox4_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="redemption" Foreground="White">
+                <ListBox x:Name="ListBox5" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox5_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+               <phone:PivotItem Header="tenzi" Foreground="White">
+                <ListBox x:Name="ListBox6" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox6_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="kikuyu" Foreground="White">
+                <ListBox x:Name="ListBox7" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox7_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="kamba" Foreground="White">
+                <ListBox x:Name="ListBox8" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox8_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="kale" Foreground="White">
+                <ListBox x:Name="ListBox9" ItemsSource="{Binding Songs}" 
+                    SelectionChanged="ListBox9_SelectionChanged" 
+                    Background="OrangeRed" Margin="-12,0,-12,0" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,2" Width="480" Height="110" Background="White">
+                                <TextBlock x:Name="Title" Text="{Binding Title}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="40" LineHeight="40" Height="55" 
+                                Foreground="Black" FontWeight="Bold" />
+                                <TextBlock x:Name="Content" Text="{Binding Content}" 
+                                TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}" 
+                                FontSize="35" LineHeight="35" Height="50" 
+                                Foreground="Black" FontStyle="Italic" />
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FFFA6800" ForegroundColor="White">
+            <shell:ApplicationBarIconButton Click="Searchable" IconUri="/Assets/appbar/appbar_search.png" Text="Search"/>
+            <shell:ApplicationBarIconButton Click="MyOwnSongs" IconUri="/Assets/appbar/appbar_edit.png" Text="My Songs"/>
+            <shell:ApplicationBarIconButton Click="MyFavourites" IconUri="/Assets/appbar/appbar_favall.png" Text="Favorites" />
+            <shell:ApplicationBarIconButton Click="MySettings" IconUri="/Assets/appbar/appbar_settings.png" Text="Settings"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Click="Searchable1" Text="More Songs" />
+                <shell:ApplicationBarMenuItem Click="AppTutorial" Text="App Tutorial" />
+                <shell:ApplicationBarMenuItem Click="AboutThisApp" Text="About this App"/>
+                <shell:ApplicationBarMenuItem Click="HowItWorks" Text="How it Works"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="vSongBook.BbLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="White"
+    shell:SystemTray.ForegroundColor="#FFFA6800" >
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="0,0,0,10" Background="#FFFA6800">
+            <TextBlock x:Name="ApplicationTitle" Text="VSONGBOOK" 
+                       Style="{StaticResource PhoneTextNormalStyle}" Foreground="White"/>
+            <TextBlock x:Name="PageTitle" Text="On your marks . . ." Margin="10,0,10,10" 
+               Style="{StaticResource PhoneTextTitle1Style}" FontSize="40"  Foreground="White"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="5,0,5,5"  Background="White">
+
+            <TextBlock x:Name="promptmobile" TextWrapping="Wrap"  Style="{StaticResource PhoneTextNormalStyle}"
+                   Foreground="Black" VerticalAlignment="Top" Width="450" Height="40" Margin="10,0,10,0" 
+                   FontSize="35" Text="Mobile Phone:"/>
+            
+            <TextBlock x:Name="textexplain" TextWrapping="Wrap"  Style="{StaticResource PhoneTextNormalStyle}"
+                   FontSize="25" Foreground="Black" VerticalAlignment="Top" Width="450" Height="110" Margin="10,50,10,0" FontStyle="Italic" 
+                    Text="in the format of country code and your mobile number i.e (254)(0711474787) => 254711474787"/>
+
+            <TextBox x:Name="signin_key" Width="430" Height="100"
+               FontSize="40" Padding="10" Margin="10,150,10,0" Foreground="Black" Background="Beige" 
+               BorderBrush="#FFFA6800" VerticalAlignment="Top" />
+
+        </Grid>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FFFA6800" ForegroundColor="White">
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_next.png" Text="Proceed"/>
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

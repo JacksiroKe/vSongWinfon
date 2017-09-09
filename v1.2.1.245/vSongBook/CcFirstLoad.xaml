@@ -1,0 +1,84 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="vSongBook.CcFirstLoad"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="clr-namespace:vSongBook.RealData"
+    xmlns:local="clr-namespace:vSongBook"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <data:SongBookCollection x:Key="SongBookCollection" />
+        <DataTemplate x:Key="SongBookTemplate">
+            <StackPanel Margin="0,0,0,2" Tap="OnItemContentTap" Orientation="Vertical" 
+              Background="Beige" >
+                <TextBlock x:Name="Title" Text="{Binding Name}" Height="Auto"
+                   Foreground="Black" TextWrapping="Wrap"  Margin="4"
+                   FontSize="45" Padding="10"/>
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="0,0,0,10" Background="#FFFA6800">
+            <TextBlock x:Name="ApplicationTitle" Text="VSONGBOOK" 
+                       Style="{StaticResource PhoneTextNormalStyle}" Foreground="White"/>
+            <TextBlock x:Name="PageTitle" Text="Select SongBooks" Margin="10,0,10,10" 
+               Style="{StaticResource PhoneTextTitle1Style}" FontSize="40"  Foreground="White"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10" >
+
+            <toolkit:LongListMultiSelector x:Name="SongBookList" 
+                Margin="0,14,-12,0" LayoutMode="List"                
+                ItemsSource="{StaticResource SongBookCollection}"
+               ItemTemplate="{StaticResource SongBookTemplate}"
+            />
+        </Grid>
+
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FFFA6800" ForegroundColor="White">
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_next.png" Text="Proceed"/>
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

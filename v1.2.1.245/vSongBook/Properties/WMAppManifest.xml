@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="fr" />
+  </Languages>
+  <App xmlns="" ProductID="{cd3ab46f-c37b-4566-b8ed-e70005101ccc}" Title="vSongBook" RuntimeType="Silverlight" Version="1.2.1.245" Genre="apps.normal" Author="Jackson Siro" Description="Turn your phone into a songbook" Publisher="Jackson Siro" PublisherID="{da5e115e-1964-4159-a5b4-0b3e864b6791}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="CcFirstLoad.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="vSongBookToken" TaskName="_default">
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</SmallImageURI>
+          <Title>vSongBook</Title>
+          <Photo01ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycle3.png</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycle2.png</Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycle1.png</Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false"></Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false"></Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false"></Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false"></Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false"></Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false"></Photo09ImageURI>
+          <Count>0</Count>
+          <HasLarge>True</HasLarge>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateCycle>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

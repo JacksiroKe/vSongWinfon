@@ -1,0 +1,258 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="vSongBook.DdSongBookNew"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="clr-namespace:vSongBook.RealData"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <data:SongCollection x:Key="SongCollection"/>
+        <DataTemplate x:Key="SongItemTemplate">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+        
+        <data:SongCollection1 x:Key="SongCollection1"/>
+        <DataTemplate x:Key="SongItemTemplate1">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection2 x:Key="SongCollection2"/>
+        <DataTemplate x:Key="SongItemTemplate2">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection3 x:Key="SongCollection3"/>
+        <DataTemplate x:Key="SongItemTemplate3">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection4 x:Key="SongCollection4"/>
+        <DataTemplate x:Key="SongItemTemplate4">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+        
+        <data:SongCollection5 x:Key="SongCollection5"/>
+        <DataTemplate x:Key="SongItemTemplate5">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection6 x:Key="SongCollection6"/>
+        <DataTemplate x:Key="SongItemTemplate6">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection7 x:Key="SongCollection7"/>
+        <DataTemplate x:Key="SongItemTemplate7">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection8 x:Key="SongCollection8"/>
+        <DataTemplate x:Key="SongItemTemplate8">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <data:SongCollection9 x:Key="SongCollection9"/>
+        <DataTemplate x:Key="SongItemTemplate9">
+            <StackPanel Margin="0,-14,0,3" Tap="OnItemContentTap"  Background="White">
+                <TextBlock Text="{Binding Title}" Margin="10,10,10,0" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+                <TextBlock Text="{Binding Content}" Margin="10,0,10,10" Foreground="Black"
+                   FontSize="{StaticResource PhoneFontSizeNormal}" 
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"/>
+            </StackPanel>
+        </DataTemplate>
+
+    </phone:PhoneApplicationPage.Resources>
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="#FFFA6800">
+        <ProgressBar Name="pProgress" IsIndeterminate="True" Height="50" Foreground="White" />
+
+        <phone:Pivot Title="VSONGBOOK" x:Name="pSongBook" Foreground="White" 
+             SelectionChanged="OnPivotSelectionChanged">
+
+            <phone:PivotItem x:Name="MultiselectLbxItem1" Header="Worship" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList1" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList1SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList1IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate1}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem2" Header="Injili" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList2" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList2SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList2IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate2}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem3" Header="Believers" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList3" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList3SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList3IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate3}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem4" Header="Wokovu" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList4" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList4SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList4IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate4}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem5" Header="Redemption" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList5" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList5SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList5IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate5}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem6" Header="Tenzi" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList6" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList6SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList6IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate6}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem7" Header="Kikuyu" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList7" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList7SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList7IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate7}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem8" Header="Kamba" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList8" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList8SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList8IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate8}" />
+            </phone:PivotItem>
+
+            <phone:PivotItem x:Name="MultiselectLbxItem9" Header="Kale" Background="OrangeRed" Foreground="White" >
+                <toolkit:LongListMultiSelector x:Name="SongList9" Margin="0,0,-12,0"
+                    ItemsSource="{StaticResource SongCollection}" LayoutMode="List"
+                    SelectionChanged="OnSongList9SelectionChanged"
+                    IsSelectionEnabledChanged="OnSongList9IsSelectionEnabledChanged"
+                    ItemTemplate="{StaticResource SongItemTemplate9}" />
+            </phone:PivotItem>
+
+        </phone:Pivot>
+
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FFFA6800" ForegroundColor="White">
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_search.png" Text="Search"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_edit.png" Text="My Songs"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_favall.png" Text="Favorites" />
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar/appbar_settings.png" Text="Settings"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="App Tutorial" />
+                <shell:ApplicationBarMenuItem Text="About this App"/>
+                <shell:ApplicationBarMenuItem Text="How it Works"/>
+                <shell:ApplicationBarMenuItem Text="Select Songs"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>
