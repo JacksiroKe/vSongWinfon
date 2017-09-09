@@ -1,0 +1,9 @@
+C:\WinFon\Projects\AsTextBox\AsTextBox\Bin\Debug\AsTextBox.dll
+C:\WinFon\Projects\AsTextBox\AsTextBox\Bin\Debug\AsTextBox.pdb
+C:\WinFon\Projects\AsTextBox\AsTextBox\obj\Debug\AsTextBox.dll
+C:\WinFon\Projects\AsTextBox\AsTextBox\obj\Debug\AsTextBox.pdb
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Debug\AsTextBox.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Debug\AsTextBox.pdb
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\obj\Debug\AsTextBox.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\obj\Debug\AsTextBox.pdb

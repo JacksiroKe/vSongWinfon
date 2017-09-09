@@ -1,0 +1,16 @@
+C:\WinFon\Projects\AsTextBox\AsTextBox\Bin\Release\AsTextBox.dll
+C:\WinFon\Projects\AsTextBox\AsTextBox\Bin\Release\AsTextBox.pdb
+C:\WinFon\Projects\AsTextBox\AsTextBox\obj\Release\AsTextBox.dll
+C:\WinFon\Projects\AsTextBox\AsTextBox\obj\Release\AsTextBox.pdb
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Release\AsTextBox.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Release\AsTextBox.pdb
+C:\WinFon\Projects\mBible\mBible\AsTextBox\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\obj\Release\AsTextBox.csprojResolveAssemblyReference.cache
+C:\WinFon\Projects\mBible\mBible\AsTextBox\obj\Release\AsTextBox.dll
+C:\WinFon\Projects\mBible\mBible\AsTextBox\obj\Release\AsTextBox.pdb
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\Bin\Release\AsTextBox.dll
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\Bin\Release\AsTextBox.pdb
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\obj\Release\AsTextBox.csprojResolveAssemblyReference.cache
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\obj\Release\AsTextBox.dll
+C:\WinFon\Projects\vSongBook\vSongBook\AsTextBox\obj\Release\AsTextBox.pdb
